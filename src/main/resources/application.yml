@@ -1,0 +1,14 @@
+string-diff-visualiser:
+  input:
+    filter-regex: "[^a-z]+"
+    filter-regex-enabled: true
+    min-char-count: 2
+    first-input-id: "1"
+    second-input-id: "2"
+  output:
+    char-info-separator: /
+
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+    default-property-inclusion: non_null
