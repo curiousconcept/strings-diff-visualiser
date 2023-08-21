@@ -32,6 +32,5 @@ function formSubmit(e) {
 }
 
 function renderResult(diffRes) {
-console.log(diffRes)
     document.getElementById('output').innerText = diffRes["diff_output"]
 }
