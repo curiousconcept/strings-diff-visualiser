@@ -6,8 +6,10 @@ plugins {
 	kotlin("jvm") version "1.8.22"
 	kotlin("plugin.spring") version "1.8.22"
 	id("com.google.cloud.tools.jib") version "3.3.2"
+}
 
-
+java {
+	sourceCompatibility = JavaVersion.VERSION_17
 }
 
 jib.from.image ="amazoncorretto:17-alpine"
@@ -15,10 +17,6 @@ jib.to.image = "strings-diff-visualiser"
 
 group = "com.predictx"
 version = "0.0.1-SNAPSHOT"
-
-java {
-	sourceCompatibility = JavaVersion.VERSION_17
-}
 
 repositories {
 	mavenCentral()
